@@ -9,6 +9,7 @@ DATA_PATH = "The_GALE_ENCYCLOPEDIA_of_MEDICINE_SECOND.pdf"
 def load_pdf_files(DATA_PATH):
     loader = PyPDFLoader(DATA_PATH)  # Use PyPDFLoader directly
     documents = loader.load()  # Load the documents
+    print(documents[:2])
     return documents
 
 # Usage
